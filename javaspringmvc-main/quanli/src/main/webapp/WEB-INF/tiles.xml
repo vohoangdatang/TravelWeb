@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+     <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="..."/>
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp"/>
+        <put-attribute name="content" value ="..."/>
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"/>
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content" value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Đăng Nhập" />
+        <put-attribute name="content" value="/WEB-INF/jsp/login.jsp" />
+    </definition>
+     <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="Đăng ký " />
+        <put-attribute name="content" value="/WEB-INF/jsp/register.jsp" />
+    </definition>
+     <definition name="quanliLayout" template="/WEB-INF/layout/quanlibase.jsp">
+        <put-attribute name="title" value="..."/>
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp"/>
+        <put-attribute name="contentright" value ="..."/>
+        <put-attribute name="content" value ="..."/>
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"/>
+    </definition>
+    <definition name="updateUsers" extends="baseLayout">
+        <put-attribute name="title" value="Cập nhập người dùng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/updateUser.jsp" />
+    </definition>
+    <definition name="qluser" extends="quanliLayout">
+        <put-attribute name="title" value="Quản lí người dùng" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/qluser.jsp" />
+    </definition>
+    <definition name="userprofile" extends="baseLayout">
+        <put-attribute name="title" value="Thông tin người dùng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/userprofile.jsp" />
+    </definition>
+     <definition name="profile" extends="quanliLayout">
+        <put-attribute name="title" value="Thông tin người dùng" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/profile.jsp" />
+    </definition>
+     <definition name="khachsan" extends="baseLayout">
+        <put-attribute name="title" value="Khách Sạn" />
+        <put-attribute name="content" value="/WEB-INF/jsp/khachsan.jsp" />
+    </definition>
+    <definition name="qlkhachsan" extends="quanliLayout">
+        <put-attribute name="title" value="Quản lí Khách Sạn" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/qlkhachsan.jsp" />
+    </definition>
+    <definition name="loaiphong" extends="quanliLayout">
+        <put-attribute name="title" value="Quản lí loại phòng" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/loaiphong.jsp" />
+    </definition>
+    <definition name="phong" extends="quanliLayout">
+        <put-attribute name="title" value="Quản lí loại phòng" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/phong.jsp" />
+    </definition>
+    <definition name="editphong" extends="quanliLayout">
+        <put-attribute name="title" value="Chỉnh sửa loại phòng" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/editphong.jsp" />
+    </definition>
+    <definition name="khachsanByLP" extends="baseLayout">
+        <put-attribute name="title" value="Khách Sạn" />
+        <put-attribute name="content" value="/WEB-INF/jsp/khachsan.jsp" />
+    </definition>
+    <definition name="detailKS" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết khách sạn" />
+        <put-attribute name="content" value="/WEB-INF/jsp/detailKS.jsp" />
+    </definition>
+    <definition name="cart" extends="baseLayout">
+        <put-attribute name="title" value="Khách Sạn" />
+        <put-attribute name="content" value="/WEB-INF/jsp/cart.jsp" />
+    </definition>
+    <definition name="checkout" extends="baseLayout">
+        <put-attribute name="title" value="Kiểm tra thông tin " />
+        <put-attribute name="content" value="/WEB-INF/jsp/checkout.jsp" />
+    </definition>
+    <definition name="phuongthucthanhtoan" extends="baseLayout">
+        <put-attribute name="title" value="Phương thức thanh toán" />
+        <put-attribute name="content" value="/WEB-INF/jsp/phuongthucthanhtoan.jsp" />
+    </definition>
+     <definition name="themks" extends="quanliLayout">
+        <put-attribute name="title" value="Thêm khách sạn" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/anh.jsp" />
+    </definition>
+     <definition name="updateprofile" extends="quanliLayout">
+        <put-attribute name="title" value="Chỉnh sửa thông tin người dùng" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/updateProfile.jsp" />
+    </definition>
+    <definition name="updateKhachSan" extends="quanliLayout">
+        <put-attribute name="title" value="Chỉnh sửa thông tin khách sạn" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/updateKhachSan.jsp" />
+    </definition>
+    <definition name="paypalcancel" extends="baseLayout">
+        <put-attribute name="title" value="Hủy thanh toán" />
+        <put-attribute name="content" value="/WEB-INF/jsp/paypalCancel.jsp" />
+    </definition>
+    <definition name="checkoutpaypal" extends="baseLayout">
+        <put-attribute name="title" value="Checkout Paypal" />
+        <put-attribute name="content" value="/WEB-INF/jsp/checkoutpaypal.jsp" />
+    </definition>
+     <definition name="paypalsuccess" extends="baseLayout">
+        <put-attribute name="title" value="Thanh toán thành công" />
+        <put-attribute name="content" value="/WEB-INF/jsp/paypalsuccess.jsp" />
+    </definition>
+    <definition name="qltour" extends="quanliLayout">
+        <put-attribute name="title" value="Quản lí tour" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/qltour.jsp" />
+    </definition>
+    <definition name="thongke" extends="quanliLayout">
+        <put-attribute name="title" value="Thống kê báo cáo" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/thongke.jsp" />
+    </definition>
+    <definition name="tour" extends="baseLayout">
+        <put-attribute name="title" value="Tour" />
+        <put-attribute name="content" value="/WEB-INF/jsp/tour.jsp" />
+    </definition>
+    <definition name="detailtour" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết tour" />
+        <put-attribute name="content" value="/WEB-INF/jsp/detailtour.jsp" />
+    </definition>
+    <definition name="addtour" extends="quanliLayout">
+        <put-attribute name="title" value="Thêm Tour" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/addTour.jsp" />
+    </definition>
+    <definition name="updatetour" extends="quanliLayout">
+        <put-attribute name="title" value="Chỉnh Sửa Tour" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/updateTour.jsp" />
+    </definition>
+    <definition name="carttour" extends="baseLayout">
+        <put-attribute name="title" value="Giỏ hàng Tour" />
+        <put-attribute name="content" value="/WEB-INF/jsp/carttour.jsp" />
+    </definition>
+    <definition name="checkouttour" extends="baseLayout">
+        <put-attribute name="title" value="Kiểm tra thông tin " />
+        <put-attribute name="content" value="/WEB-INF/jsp/checkouttour.jsp" />
+    </definition>
+     <definition name="phuongthucthanhtoantour" extends="baseLayout">
+        <put-attribute name="title" value="Phương thức thanh toán" />
+        <put-attribute name="content" value="/WEB-INF/jsp/phuongthucthanhtoantour.jsp" />
+    </definition>
+    <definition name="checkoutpaypaltour" extends="baseLayout">
+        <put-attribute name="title" value="Checkout Paypal" />
+        <put-attribute name="content" value="/WEB-INF/jsp/checkoutpaypaltour.jsp" />
+    </definition>
+     <definition name="lichsu" extends="quanliLayout">
+        <put-attribute name="title" value="Lịch sử mua hàng" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/lichsu.jsp" />
+    </definition>
+    <definition name="hoadon" extends="quanliLayout">
+        <put-attribute name="title" value="Quản lí Hóa Đơn" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/hoadon.jsp" />
+    </definition>
+     <definition name="updatehoadon" extends="quanliLayout">
+        <put-attribute name="title" value="Quản lí Hóa Đơn" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/updateHoaDon.jsp" />
+    </definition>
+     <definition name="datphongthanhcong" extends="baseLayout">
+        <put-attribute name="title" value="Đặt thành công" />
+        <put-attribute name="content" value="/WEB-INF/jsp/datphongthanhcong.jsp" />
+    </definition>
+     <definition name="detaildp" extends="quanliLayout">
+        <put-attribute name="title" value="Quản lí Hóa Đơn" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/detailCTDP.jsp" />
+    </definition>
+     <definition name="updatehoadontour" extends="quanliLayout">
+        <put-attribute name="title" value="Quản lí Hóa Đơn" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/updatehoadontour.jsp" />
+    </definition>
+     <definition name="detaildt" extends="quanliLayout">
+        <put-attribute name="title" value="Quản lí Hóa Đơn" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/detailCTDT.jsp" />
+    </definition>
+    <definition name="chuyenxe" extends="quanliLayout">
+        <put-attribute name="title" value="Quản lí Chuyến Xe" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/chuyenxe.jsp" />
+    </definition>
+    <definition name="addChuyenXe" extends="quanliLayout">
+        <put-attribute name="title" value="Thêm Chuyến Xe" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/addChuyenXe.jsp" />
+    </definition>
+    <definition name="editChuyenXe" extends="quanliLayout">
+        <put-attribute name="title" value="Chỉnh Sửa CHuyến Xe" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/editChuyenXe.jsp" />
+    </definition>
+     <definition name="TaiXe" extends="baseLayout">
+        <put-attribute name="title" value="Quản lí Tài Xế" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/TaiXe.jsp" />
+    </definition>
+    <definition name="detailCX" extends="baseLayout">
+        <put-attribute name="title" value="Thông tin chuyến xe" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/detailCX.jsp" />
+    </definition>
+     <definition name="chuyenxeindex" extends="baseLayout">
+        <put-attribute name="title" value="Chuyến xe" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/chuyenxeindex.jsp" />
+    </definition>
+     <definition name="cartCX" extends="baseLayout">
+        <put-attribute name="title" value="Chuyến xe" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/cartCX.jsp" />
+    </definition>
+     <definition name="addDanhGia" extends="baseLayout">
+        <put-attribute name="title" value="Đánh Giá Chuyến Xe" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/addDanhGia.jsp" />
+    </definition>
+    <definition name="NhanVienIndex" extends="baseLayout">
+        <put-attribute name="title" value="Nhân Viên" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/NhanVienIndex.jsp" />
+    </definition>
+    <definition name="NhanVienCart" extends="baseLayout">
+        <put-attribute name="title" value="Nhân Viên" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/NhanVienCart.jsp" />
+    </definition>
+    <definition name="HoaDonNV" extends="baseLayout">
+        <put-attribute name="title" value="Nhân Viên" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/HoaDonNV.jsp" />
+    </definition>
+    <definition name="TaiXeInfo" extends="baseLayout">
+        <put-attribute name="title" value="Nhân Viên" />
+        <put-attribute name="contentleft" value ="/WEB-INF/layout/contentleft.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/TaiXeInfo.jsp" />
+    </definition>
+</tiles-definitions>
